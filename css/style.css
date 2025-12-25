@@ -5,6 +5,7 @@
   --shadow-color: rgba(0, 0, 0, 0.2);
   --bg1: #030313;
   --bg2: #071129;
+  --bac:#1a212bb6;
   --accent: linear-gradient(135deg, #1FD1FF 0%, #6B5BFF 100%);
   --icon-size: 60px;
 
@@ -193,7 +194,7 @@ nav .cn .box ul:nth-child(2) li:hover a {
   nav .cn .box ul:nth-child(4) li {
     background: linear-gradient(to right,
         var(--main-color) 50%,
-        #2f3a4946 50%);
+        var(--bac) 50%);
     background-position: right bottom;
     background-size: 200% 100%;
     padding-left: 25px;
@@ -821,7 +822,7 @@ header .box2 figure img {
 }
 
 .service-card {
-  background: #2f3a4946;
+  background: var(--bac);
   padding: 30px 20px;
   height: 240px;
   border-radius: 15px;
@@ -913,7 +914,7 @@ header .box2 figure img {
 
 
 #planet {
-  width: 10dvw;
+  width: 600px;
   height: 520px;
   transform-style: preserve-3d;
   perspective: 1200px;
@@ -995,7 +996,7 @@ header .box2 figure img {
   align-items: center;
   color: #fff;
   text-align: center;
-  background: #2f3a4946;
+  background: var(--bac);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.06);
 }
@@ -1011,7 +1012,7 @@ header .box2 figure img {
   padding-bottom: 50px;
   color: #fff;
   text-align: center;
-  background: #2f3a4946;
+  background: var(--bac);
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.06);
 }
@@ -1041,7 +1042,7 @@ header .box2 figure img {
   border-radius: 50%;
   position: relative;
   background:
-    conic-gradient(var(--main-color) calc(var(--p) * 1%), #2f3a4946 0);
+    conic-gradient(var(--main-color) calc(var(--p) * 1%), var(--bac) 0);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), inset 0 0 12px rgba(255, 255, 255, 0.06);
   display: grid;
   place-items: center;
@@ -1161,7 +1162,7 @@ header .box2 figure img {
 }
 
 .card-front {
-  background: #2f3a4946;
+  background: var(--bac);
   color: #fff;
 }
 
@@ -1226,7 +1227,7 @@ header .box2 figure img {
   padding-top: 50px;
   text-align: center;
   color: #fff;
-  background: #2f3a4946;
+  background: var(--bac);
 }
 
 .contact .section-title span {
@@ -1262,7 +1263,7 @@ header .box2 figure img {
   border: none;
   border-radius: 8px;
   outline: none;
-  background: #2f3a4946;
+  background: var(--bac);
   color: #fff;
 }
 .contact-form textarea{
@@ -1429,7 +1430,7 @@ header .box2 figure img {
 footer {
 
   text-align: center;
-  background: #2f3a4946;
+  background: var(--bac);
   color: #aaa;
   font-size: 0.9rem;
   width: 100%;
