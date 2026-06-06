@@ -1,388 +1,738 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ==================== SEO META TAGS ==================== -->
+  <title>Yousef Hany | Front-End Developer & Web Designer | يوسف هاني مطور ويب</title>
+
   <meta name="description"
-    content="Yousef Hany is a Front-End Developer specializing in modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and React. View real-world projects and clean UI designs.">
+    content="Yousef Hany (يوسف هاني) is a professional Front-End Developer from Egypt specializing in modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and React. مطور واجهات أمامية محترف متخصص في بناء مواقع ويب حديثة وسريعة." />
+
   <meta name="keywords"
-    content="Yousef Hany, Front End Developer, Frontend Developer Portfolio, Web Developer Portfolio, HTML CSS JavaScript Developer, React Front End Developer, Responsive Web Design, UI UX Front End, Modern Web Design, Portfolio Website, Clean Code, SEO Friendly Websites, GitHub Projects, Freelance Front End Developer">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Yousef Hany">
-  <title>Yousef Hany | Front-End Developer Portfolio</title>
-  <link rel="stylesheet" href="css/style.css" />
+    content="Yousef Hany, يوسف هاني, يوسف هاني مبرمج, مبرمج يوسف هاني, يوسف هاني فرنت اند, يوسف هاني مطور ويب, يوسف هاني مطور واجهات أمامية, فرنت اند يوسف هاني, Yousef Hany Developer, Yousef Hany Frontend, Yousef Hany Portfolio, Yousef Hany Web Developer, Yousef Hany React Developer, Yousef Hany Programmer, Front End Developer Egypt, Frontend Developer Portfolio, Web Developer Portfolio, HTML CSS JavaScript Developer, React Front End Developer, Responsive Web Design, UI UX Front End, Modern Web Design, Portfolio Website, Clean Code, SEO Friendly Websites, GitHub Projects, Freelance Front End Developer, مبرمج مصري, مطور مواقع, تصميم مواقع, مبرمج فرنت اند, مطور ويب مصر" />
+
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="author" content="Yousef Hany (يوسف هاني)" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="bingbot" content="index, follow" />
+  <meta name="revisit-after" content="7 days" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="English, Arabic" />
+  <meta name="geo.region" content="EG" />
+  <meta name="geo.placename" content="Egypt" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yousef-hany-dev.github.io/portfolio/" />
+
+  <!-- Alternate language references -->
+  <link rel="alternate" hreflang="en" href="https://yousef-hany-dev.github.io/portfolio/" />
+  <link rel="alternate" hreflang="ar" href="https://yousef-hany-dev.github.io/portfolio/" />
+  <link rel="alternate" hreflang="x-default" href="https://yousef-hany-dev.github.io/portfolio/" />
+
+  <!-- ==================== OPEN GRAPH (Facebook / LinkedIn / etc.) ==================== -->
+  <meta property="og:title" content="Yousef Hany | Front-End Developer & Web Designer | يوسف هاني" />
+  <meta property="og:description"
+    content="I Build Websites That Convert. Professional Front-End Developer helping brands grow through high-performance, visually stunning digital experiences. مطور واجهات أمامية محترف." />
+  <meta property="og:image" content="https://yousef-hany-dev.github.io/portfolio/imgs/my2-compressed_Webpifier.webp" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Yousef Hany - Professional Front-End Developer from Egypt" />
+  <meta property="og:url" content="https://yousef-hany-dev.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Yousef Hany Portfolio" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="ar_EG" />
+
+  <!-- ==================== TWITTER CARD ==================== -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yousef Hany | Front-End Developer & Web Designer" />
+  <meta name="twitter:description"
+    content="Professional Front-End Developer from Egypt. Building modern, responsive & high-performance websites. مطور واجهات أمامية محترف من مصر." />
+  <meta name="twitter:image" content="https://yousef-hany-dev.github.io/portfolio/imgs/my2-compressed_Webpifier.webp" />
+  <meta name="twitter:image:alt" content="Yousef Hany - Front-End Developer Portfolio" />
+
+  <!-- ==================== THEME & ICONS ==================== -->
+  <meta name="theme-color" content="#00e5ff" />
+  <meta name="msapplication-TileColor" content="#0a0a1a" />
+  <link rel="icon" type="image/webp" href="imgs/شعار-compressed_Webpifier.webp" />
+  <link rel="apple-touch-icon" href="imgs/شعار-compressed_Webpifier.webp" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- ==================== PRECONNECT & PRELOAD ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <link rel="dns-prefetch" href="https://code.iconify.design" />
+
+  <!-- Preload critical hero image -->
+  <link rel="preload" as="image" type="image/webp" href="imgs/my2-compressed_Webpifier.webp" />
+
+  <!-- ==================== FONTS & ICONS ==================== -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <!-- ==================== STYLESHEETS ==================== -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio-redesign.css" />
+
+  <!-- ==================== STRUCTURED DATA (JSON-LD) ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://yousef-hany-dev.github.io/portfolio/#person",
+        "name": "Yousef Hany",
+        "alternateName": ["يوسف هاني", "Yousef Hany Dev", "يوسف هاني مبرمج", "Yousef Hani"],
+        "givenName": "Yousef",
+        "familyName": "Hany",
+        "jobTitle": "Front-End Developer",
+        "description": "Professional Front-End Developer from Egypt specializing in modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and React. مطور واجهات أمامية محترف من مصر متخصص في بناء مواقع ويب حديثة وسريعة.",
+        "url": "https://yousef-hany-dev.github.io/portfolio/",
+        "image": "https://yousef-hany-dev.github.io/portfolio/imgs/my2-compressed_Webpifier.webp",
+        "email": "yousefhany.dev@gmail.com",
+        "telephone": "+201123786349",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "EG",
+          "addressRegion": "Egypt"
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Egypt"
+        },
+        "sameAs": [
+          "https://github.com/yousef-hany-dev",
+          "https://www.linkedin.com/in/yousef-hany-294068386",
+          "https://www.facebook.com/yousef.hany.1023",
+          "https://wa.me/201123786349"
+        ],
+        "knowsAbout": [
+          "HTML", "CSS", "JavaScript", "React", "Git", "GitHub",
+          "Front-End Development", "Web Development", "Responsive Web Design",
+          "UI/UX Design", "SEO Optimization", "Web Performance",
+          "تطوير الويب", "تصميم المواقع", "برمجة الواجهات الأمامية"
+        ],
+        "knowsLanguage": [
+          { "@type": "Language", "name": "Arabic", "alternateName": "العربية" },
+          { "@type": "Language", "name": "English", "alternateName": "الإنجليزية" }
+        ],
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Front-End Developer",
+          "description": "Builds modern, responsive, and high-performance websites and web applications",
+          "skills": "HTML, CSS, JavaScript, React, Git, UI/UX Design, SEO",
+          "occupationLocation": {
+            "@type": "Country",
+            "name": "Egypt"
+          }
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://yousef-hany-dev.github.io/portfolio/#website",
+        "url": "https://yousef-hany-dev.github.io/portfolio/",
+        "name": "Yousef Hany Portfolio | يوسف هاني بورتفوليو",
+        "description": "Professional portfolio of Yousef Hany (يوسف هاني), a Front-End Developer from Egypt",
+        "publisher": { "@id": "https://yousef-hany-dev.github.io/portfolio/#person" },
+        "inLanguage": ["en", "ar"],
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://yousef-hany-dev.github.io/portfolio/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://yousef-hany-dev.github.io/portfolio/#webpage",
+        "url": "https://yousef-hany-dev.github.io/portfolio/",
+        "name": "Yousef Hany | Front-End Developer & Web Designer | يوسف هاني مطور ويب",
+        "description": "Professional portfolio website of Yousef Hany - a Front-End Developer specializing in HTML, CSS, JavaScript, and React.",
+        "isPartOf": { "@id": "https://yousef-hany-dev.github.io/portfolio/#website" },
+        "about": { "@id": "https://yousef-hany-dev.github.io/portfolio/#person" },
+        "inLanguage": ["en", "ar"],
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-06-07"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://yousef-hany-dev.github.io/portfolio/#service",
+        "name": "Yousef Hany - Front-End Development Services",
+        "description": "Professional web development services including responsive website design, UI/UX design, React development, and SEO optimization. خدمات تطوير مواقع احترافية.",
+        "provider": { "@id": "https://yousef-hany-dev.github.io/portfolio/#person" },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Worldwide"
+        },
+        "serviceType": [
+          "Web Development",
+          "Front-End Development",
+          "UI/UX Design",
+          "SEO Optimization",
+          "Responsive Web Design",
+          "React Development"
+        ],
+        "url": "https://yousef-hany-dev.github.io/portfolio/",
+        "telephone": "+201123786349",
+        "email": "yousefhany.dev@gmail.com"
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://yousef-hany-dev.github.io/portfolio/#projects",
+        "name": "Portfolio Projects by Yousef Hany",
+        "description": "Web development projects by Front-End Developer Yousef Hany",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Friday",
+            "url": "https://yousef-hany-dev.github.io/Friday/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "E-Power",
+            "url": "https://yousef-hany-dev.github.io/E-Power/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Lunar Flair",
+            "url": "https://yousef-hany-dev.github.io/Lunar-Flair/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Cylo App",
+            "url": "https://yousef-hany-dev.github.io/portfolio/"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://yousef-hany-dev.github.io/portfolio/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
-<body>
+<body class="spa-mode">
+
+  <!-- ==================== ARABIC SEO CONTENT (Screen Reader / Search Engine Only) ==================== -->
+  <div class="sr-only" aria-hidden="false" lang="ar" dir="rtl">
+    <h2>يوسف هاني - مطور واجهات أمامية محترف</h2>
+    <p>يوسف هاني مبرمج ومطور ويب محترف من مصر. متخصص في تطوير الواجهات الأمامية (فرنت اند) باستخدام HTML و CSS و
+      JavaScript و React. يقدم خدمات تصميم وتطوير مواقع ويب حديثة وسريعة ومتجاوبة مع جميع الأجهزة.</p>
+    <p>مبرمج يوسف هاني - خبرة أكثر من سنتين في مجال تطوير الويب وتصميم واجهات المستخدم. فرنت اند يوسف هاني متخصص في بناء
+      مواقع عالية الأداء تساعد العلامات التجارية على النمو.</p>
+    <p>يوسف هاني فرنت اند ديفلوبر - يبني مواقع ويب تحول الزوار إلى عملاء. متخصص في التصميم النظيف والأداء السريع
+      والنتائج الموثوقة.</p>
+    <p>خدمات يوسف هاني: تطوير مواقع الويب، تصميم واجهات المستخدم UI/UX، تحسين محركات البحث SEO، تطوير تطبيقات React،
+      تصميم مواقع متجاوبة.</p>
+    <p>للتواصل مع يوسف هاني المبرمج: البريد الإلكتروني yousefhany.dev@gmail.com أو واتساب +201123786349</p>
+  </div>
+
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
   <div class="stars-container"></div>
-  <nav class="nav">
-    <div class="cn">
-      <div class="box" id="navbar">
-        <a href="#" class="logo"> <img src="imgs/شعار-compressed_Webpifier.webp"
-            alt="Yousef Hany Front-End Developer portrait"></a>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skill">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div id="openSidebarMobile" class="mobile-menu but-h2 sd">
-          <i class="bi bi-list" aria-hidden="true"></i>
-        </div>
-        <div class="sidebar" id="sidebar">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
+
+  <!-- ===================== SIDEBAR / BOTTOM NAV ===================== -->
+  <aside class="sidebar-nav" id="sidebarNav" role="navigation" aria-label="Main Navigation">
+    <div class="sidebar-logo">
+      <img src="imgs/شعار-compressed_Webpifier.webp" alt="Yousef Hany (يوسف هاني) - Logo" width="40" height="40">
     </div>
-  </nav>
-  <header id="home">
-    <div class="box1">
-      <figure>
-        <img src="imgs/my2-compressed_Webpifier.webp" alt="Yousef Hany Front-End Developer portrait" />
-      </figure>
-      <div class="text">
-        <h1><span> Hi,</span> I’m</h1>
-        <h2>Yousef Hany</h2>
-        <h3>Front-End <span>Developer</h3>
-        <p>
-          I craft powerful digital experiences that blend creativity with
-          performance. You’re not just working with a developer—you’re
-          partnering with a creative force that brings real value to your
-          digital presence.
-        </p>
-      </div>
-      <div class="cta">
-        <a href="#contact" class="btn secondary">Let’s Talk</a>
-      </div>
+
+    <nav class="sidebar-links">
+      <a href="#home" class="sidebar-link active" data-target="home">
+        <span class="link-icon"><i class="bi bi-house"></i></span>
+        <span class="link-text">Home</span>
+        <span class="link-dot"></span>
+      </a>
+      <a href="#about" class="sidebar-link" data-target="about">
+        <span class="link-icon"><i class="bi bi-person"></i></span>
+        <span class="link-text">About</span>
+        <span class="link-dot"></span>
+      </a>
+      <a href="#services" class="sidebar-link" data-target="services">
+        <span class="link-icon"><i class="bi bi-grid"></i></span>
+        <span class="link-text">Services</span>
+        <span class="link-dot"></span>
+      </a>
+      <a href="#skill" class="sidebar-link" data-target="skill">
+        <span class="link-icon"><i class="bi bi-cpu"></i></span>
+        <span class="link-text">Skills</span>
+        <span class="link-dot"></span>
+      </a>
+      <a href="#projects" class="sidebar-link" data-target="projects">
+        <span class="link-icon"><i class="bi bi-code-slash"></i></span>
+        <span class="link-text">Projects</span>
+        <span class="link-dot"></span>
+      </a>
+      <a href="#contact" class="sidebar-link" data-target="contact">
+        <span class="link-icon"><i class="bi bi-send"></i></span>
+        <span class="link-text">Contact</span>
+        <span class="link-dot"></span>
+      </a>
+    </nav>
+
+    <div class="sidebar-socials">
+      <a href="https://github.com/yousef-hany-dev" target="_blank" rel="noopener noreferrer"
+        aria-label="Yousef Hany GitHub Profile"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/yousef-hany-294068386" target="_blank" rel="noopener noreferrer"
+        aria-label="Yousef Hany LinkedIn Profile"><i class="bi bi-linkedin"></i></a>
+      <a href="https://wa.me/201123786349" target="_blank" rel="noopener noreferrer"
+        aria-label="Contact Yousef Hany on WhatsApp"><i class="bi bi-whatsapp"></i></a>
     </div>
-    <div class="box2">
-      <div class="ov">
-        <div class="med">
-          <div class="mill">
-            <div class="skills html0" style="--i: 0">
-              <div class="tek html">
-                <iconify-icon width="55" height="55px" icon="vscode-icons:file-type-html"></iconify-icon>
-                <h3>html</h3>
-              </div>
-            </div>
-            <div class="skills css0" style="--i: 1">
-              <div class="tek css">
-                <iconify-icon icon="devicon:css3" width="55" height="55"></iconify-icon>
-                <h3>css</h3>
-              </div>
-            </div>
-            <div class="skills js0" style="--i: 2">
-              <div class="tek js">
-                <iconify-icon icon="logos:javascript" width="50" height="50px"></iconify-icon>
-                <h3>js</h3>
-              </div>
-            </div>
-            <div class="skills react0" style="--i: 3">
-              <div class="tek react">
-                <iconify-icon icon="logos:react" width="50" height="50px"></iconify-icon>
-                <h3>react</h3>
-              </div>
-            </div>
-            <div class="skills boot0" style="--i: 4">
-              <div class="tek boot">
-                <iconify-icon icon="logos:bootstrap" width="50" height="50px"></iconify-icon>
-                <h3>bootstrap</h3>
-              </div>
-            </div>
-            <div class="skills git0" style="--i: 5">
-              <div class="tek git">
-                <iconify-icon icon="logos:git-icon" height="55px" width="55"></iconify-icon>
-                <h3>git</h3>
-              </div>
-            </div>
-            <div class="skills gith0" style="--i: 6">
-              <div class="tek gith">
-                <i class="bi bi-github"></i>
-                <h3>github</h3>
-              </div>
-            </div>
+  </aside>
+
+  <!-- ===================== MAIN CONTENT (SPA CONTAINER) ===================== -->
+  <main class="main-content spa-container" role="main">
+
+    <!-- ======= HERO ======= -->
+    <section class="spa-section active" id="home" aria-label="Hero Section - Yousef Hany Front-End Developer">
+      <header class="hero-inner">
+        <div class="hero-text">
+          <p class="hero-greeting"><span class="greeting-dot"></span> Available for work</p>
+          <h1 class="hero-name">Yousef<br><span>Hany</span>
+            <span class="sr-only"> - يوسف هاني | مطور واجهات أمامية (فرنت اند) محترف | Front-End Developer & Web
+              Designer from Egypt</span>
+          </h1>
+          <h2 class="hero-title">Front-End <span>Developer</span></h2>
+          <p class="hero-desc">
+            I Build Websites That Convert. Helping brands grow through high-performance,
+            visually stunning digital experiences.
+          </p>
+          <div class="hero-cta">
+            <button class="btn-primary" onclick="document.querySelector('[data-target=\'projects\']').click()">View My
+              Work</button>
+            <button class="btn-secondary" onclick="document.querySelector('[data-target=\'contact\']').click()">Let's
+              Talk <i class="bi bi-arrow-right"></i></button>
+          </div>
+          <!-- Mini Tech Stack -->
+          <div class="hero-stack">
+            <span>Tech Stack:</span>
+            <iconify-icon icon="vscode-icons:file-type-html" width="28"></iconify-icon>
+            <iconify-icon icon="devicon:css3" width="28"></iconify-icon>
+            <iconify-icon icon="logos:javascript" width="26"></iconify-icon>
+            <iconify-icon icon="logos:react" width="28"></iconify-icon>
           </div>
         </div>
-      </div>
-      <figure id="id1">
-        <img src="imgs/my2-compressed_Webpifier.webp" alt="Yousef Hany Front-End Developer portrait" />
-      </figure>
-    </div>
-  </header>
-  <section class="section1" id="about">
-    <div class="cn">
-      <div class="box-sh">
-        <figure>
-          <img src="imgs/my2-compressed_Webpifier.webp" alt="Portrait of Yousef Hany, Front-End Developer">
-        </figure>
-      </div>
-      <div class="text">
-        <h2>About <span> Me</span></h2>
-        <p>I’m Yousef Hany, a Front-End Developer </p>
-        <p>
-          who builds more than just websites—
-          I create digital experiences that attract customers and grow brands.
-          My focus is on clean design, fast performance, and reliable results.
-          Working with me means having a creative partner who makes your vision simple,
-          effective, and unforgettable.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="services" id="services">
-    <h1 class="section-title"><span>My</span> Services</h1>
-    <div class="cn">
-      <!-- Service 1 -->
-      <div class="service-card">
-        <iconify-icon icon="mdi:code-tags" class="service-icon"></iconify-icon>
-        <h3>Web Development</h3>
-        <p>
-          I build responsive, modern, and optimized websites.
-
-        </p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card">
-        <iconify-icon icon="mdi:palette" class="service-icon"></iconify-icon>
-        <h3>UI/UX Design </h3>
-        <p>
-          Creative, user-friendly designs for a great experience.
-
-        </p>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="service-card">
-        <iconify-icon icon="mdi:chart-line" class="service-icon"></iconify-icon>
-        <h3>SEO Optimization </h3>
-        <p>
-          Make your site rank higher and attract clients.
-
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="section3" id="skill">
-    <h1>skills</h1>
-    <div class="cn">
-      <!-- <div id="scene"> -->
-      <div class="cnp">
-        <div id="planet"></div>
-      </div>
-      <!-- </div> -->
-      <div class="skills-counters" id="skills">
-        <div class="skills-grid">
-          <!-- HTML -->
-          <div class="skill" data-percent="92">
-            <div class="ring">
-              <span class="value">0%</span>
-            </div>
-            <div class="label">
-              <iconify-icon icon="vscode-icons:file-type-html"></iconify-icon>
-              <b>HTML</b>
-            </div>
-          </div>
-
-          <!-- CSS -->
-          <div class="skill" data-percent="88">
-            <div class="ring">
-              <span class="value">0%</span>
-            </div>
-            <div class="label">
-              <iconify-icon icon="vscode-icons:file-type-css"></iconify-icon>
-              <b>CSS</b>
-            </div>
-          </div>
-
-          <!-- JavaScript -->
-          <div class="skill" data-percent="80">
-            <div class="ring">
-              <span class="value">0%</span>
-            </div>
-            <div class="label">
-              <iconify-icon icon="logos:javascript"></iconify-icon>
-              <b>JavaScript</b>
-            </div>
-          </div>
-
-          <!-- React -->
-          <div class="skill" data-percent="75">
-            <div class="ring">
-              <span class="value">0%</span>
-            </div>
-            <div class="label">
-              <iconify-icon icon="logos:react"></iconify-icon>
-              <b>React</b>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section4" id="projects">
-    <h1><span>My</span>Projects </h1>
-    <div class="cn">
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h2>Friday</h2>
+        <div class="hero-visual">
+          <div class="hero-img-wrapper">
+            <div class="hero-img-ring ring-a"></div>
+            <div class="hero-img-ring ring-b"></div>
             <figure>
-              <img src="imgs/pr1-compressed_Webpifier.webp" alt="Friday discounts platform website UI">
+              <img src="imgs/my2-compressed_Webpifier.webp"
+                alt="Yousef Hany (يوسف هاني) - Professional Front-End Developer and Web Designer from Egypt"
+                fetchpriority="high">
             </figure>
-            <div class="tech">
-              <p>Tech :</p>
-              <p>html</p>
-              <p>css</p>
-              <p>javascript</p>
+            <!-- Floating badge -->
+            <div class="float-badge badge-1">
+              <i class="bi bi-code-slash"></i>
+              <span>2+ Years</span>
+            </div>
+            <div class="float-badge badge-2">
+              <i class="bi bi-stars"></i>
+              <span>10+ Projects</span>
             </div>
           </div>
-          <div class="card-back">
-            <h3>Friday</h3>
-            <p>A smart web platform that aggregates the latest discounts and deals from nearby stores across Saudi
-              Arabia, helping users quickly discover the best offers in their area through a clean, modern, and
-              user-friendly experience.</p>
-            <a href="https://yousef-hany-dev.github.io/Friday/" target="_blank">View Project</a>
+          <!-- Rotating orbit - drift-free arm approach -->
+          <div class="hero-orbit">
+            <div class="orbit-ring"></div>
+            <div class="orbit-group">
+              <div class="orbit-arm" style="--angle:0deg">
+                <div class="orbit-item"><iconify-icon icon="vscode-icons:file-type-html" width="28"></iconify-icon>
+                </div>
+              </div>
+              <div class="orbit-arm" style="--angle:60deg">
+                <div class="orbit-item"><iconify-icon icon="devicon:css3" width="28"></iconify-icon></div>
+              </div>
+              <div class="orbit-arm" style="--angle:120deg">
+                <div class="orbit-item"><iconify-icon icon="logos:javascript" width="26"></iconify-icon></div>
+              </div>
+              <div class="orbit-arm" style="--angle:180deg">
+                <div class="orbit-item"><iconify-icon icon="logos:react" width="28"></iconify-icon></div>
+              </div>
+              <div class="orbit-arm" style="--angle:240deg">
+                <div class="orbit-item"><iconify-icon icon="logos:git-icon" width="26"></iconify-icon></div>
+              </div>
+              <div class="orbit-arm" style="--angle:300deg">
+                <div class="orbit-item"><i class="bi bi-github" style="font-size:24px;color:#fff"></i></div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </header>
+    </section>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h2>E-power</h2>
-            <figure>
-              <img src="imgs/pr2-compressed_Webpifier.webp" alt="Epower e-commerce website UI">
-            </figure>
-            <div class="tech">
-              <p>Tech :</p>
-              <p>html</p>
-              <p>css</p>
-              <p>javascript</p>
+    <!-- ======= ABOUT ======= -->
+    <section class="spa-section" id="about" aria-label="About Yousef Hany - Front-End Developer Biography">
+      <div class="section-container">
+        <div class="section-label">// About Me</div>
+        <article class="about-grid" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="Yousef Hany" />
+          <meta itemprop="alternateName" content="يوسف هاني" />
+          <meta itemprop="jobTitle" content="Front-End Developer" />
+          <meta itemprop="url" content="https://yousef-hany-dev.github.io/portfolio/" />
+          <div class="about-img-col">
+            <div class="about-img-wrap">
+              <img src="imgs/my2-compressed_Webpifier.webp"
+                alt="Portrait of Yousef Hany (يوسف هاني) - Front-End Developer and UI/UX Designer based in Egypt"
+                loading="lazy" itemprop="image">
+              <div class="about-img-border"></div>
+              <div class="about-stats">
+                <div class="stat-item">
+                  <span class="stat-num">2+</span>
+                  <span class="stat-label">Years Exp.</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">10+</span>
+                  <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-num">100%</span>
+                  <span class="stat-label">Dedication</span>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="card-back">
-            <h3>E-power</h3>
-            <p>An e-commerce web application specialized in selling smartphones, computers, and laptops, designed to
-              provide a smooth shopping experience with a clean interface, clear product presentation, and easy
-              navigation.</p>
-            <a href="https://yousef-hany-dev.github.io/E-Power/" target="_blank">View Project</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h2>Lunar Flair</h2>
-            <figure>
-              <img src="imgs/pr3-compressed_Webpifier.webp" alt="Modern responsive web project UI">
-            </figure>
-            <div class="tech">
-              <p>Tech :</p>
-              <p>html</p>
-              <p>css</p>
-            </div>
-          </div>
-          <div class="card-back">
-            <h3>Lunar Flair</h3>
-            <p>An e-commerce web application specialized in showcasing luxury perfumes, designed to provide an elegant
-              browsing experience with a refined interface, visually appealing product displays, and smooth navigation.
+          <div class="about-text-col">
+            <h2 class="section-heading">Who Am <span>I?</span></h2>
+            <p class="about-intro">I'm <strong itemprop="givenName">Yousef</strong> <strong
+                itemprop="familyName">Hany</strong>, a passionate Front-End Developer based in <span
+                itemprop="nationality">Egypt</span>.</p>
+            <p class="about-body" itemprop="description">
+              I build more than just websites — I create digital experiences that attract customers and grow brands.
+              My focus is on clean design, fast performance, and reliable results.
+              Working with me means having a creative partner who makes your vision simple, effective, and
+              unforgettable.
             </p>
-            <a href="https://yousef-hany-dev.github.io/Lunar-Flair/" target="_blank">View Project</a>
+            <!-- Arabic description for SEO -->
+            <p class="sr-only" lang="ar" dir="rtl">
+              أنا يوسف هاني، مطور واجهات أمامية (فرنت اند ديفلوبر) محترف من مصر. أبني أكثر من مجرد مواقع ويب — أصنع
+              تجارب رقمية تجذب العملاء وتنمي العلامات التجارية. تركيزي على التصميم النظيف والأداء السريع والنتائج
+              الموثوقة.
+            </p>
+            <div class="about-tags">
+              <span>HTML / CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>UI / UX</span>
+              <span>SEO</span>
+              <span>Git</span>
+            </div>
+            <button class="btn-primary" onclick="document.querySelector('[data-target=\'contact\']').click()">Hire Me <i
+                class="bi bi-arrow-right"></i></button>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======= SERVICES ======= -->
+    <section class="spa-section" id="services"
+      aria-label="Services offered by Yousef Hany - Web Development, UI/UX Design, SEO">
+      <div class="section-container">
+        <div class="section-label">// What I Do</div>
+        <h2 class="section-heading">My <span>Services</span></h2>
+        <!-- Arabic services description for SEO -->
+        <p class="sr-only" lang="ar" dir="rtl">خدمات يوسف هاني: تطوير مواقع الويب، تصميم واجهات المستخدم، تحسين محركات
+          البحث SEO. مبرمج فرنت اند محترف يقدم خدمات تطوير ويب عالية الجودة في مصر والعالم العربي.</p>
+        <div class="services-grid">
+
+          <div class="svc-card" itemscope itemtype="https://schema.org/Service">
+            <div class="svc-glow-line"></div>
+            <div class="svc-dots"></div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M8 3L5 6l3 3M16 3l3 3-3 3M10 21l4-18" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              </svg>
+            </div>
+            <h3 itemprop="name">Web Development</h3>
+            <p itemprop="description">I build responsive, modern, and high-performance websites that convert visitors
+              into clients.</p>
+            <div class="svc-number">01</div>
+          </div>
+
+          <div class="svc-card" itemscope itemtype="https://schema.org/Service">
+            <div class="svc-glow-line"></div>
+            <div class="svc-dots" style="left:80%"></div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" fill="none" />
+              </svg>
+            </div>
+            <h3 itemprop="name">UI/UX Design</h3>
+            <p itemprop="description">Pixel-perfect designs that deliver seamless, beautiful, and intuitive user
+              experiences.</p>
+            <div class="svc-number">02</div>
+          </div>
+
+          <div class="svc-card" itemscope itemtype="https://schema.org/Service">
+            <div class="svc-glow-line"></div>
+            <div class="svc-dots" style="left:40%;top:70%"></div>
+            <div class="svc-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" fill="none" />
+              </svg>
+            </div>
+            <h3 itemprop="name">SEO Optimization</h3>
+            <p itemprop="description">Make your site rank higher on Google and attract the right clients organically.
+            </p>
+            <div class="svc-number">03</div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <h2>cylo</h2>
-            <figure>
-              <img src="imgs/pr4-compressed_Webpifier.webp" alt="Modern responsive web project UI">
-            </figure>
-            <div class="tech">
-              <p>Tech :</p>
-              <p>html</p>
-              <p>css</p>
+    <!-- ======= SKILLS ======= -->
+    <section class="spa-section" id="skill" aria-label="Technical Skills - HTML, CSS, JavaScript, React, Git">
+      <div class="section-container">
+        <div class="section-label">// My Expertise</div>
+        <h2 class="section-heading">My <span>Skills</span></h2>
+        <div class="skills-layout">
+          <div class="planet-col">
+            <div id="planet"></div>
+          </div>
+          <div class="bars-col">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <div class="skill-bar-label"><iconify-icon icon="vscode-icons:file-type-html"
+                    width="26"></iconify-icon><span>HTML</span></div>
+                <span class="skill-bar-percent">92%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct:92%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <div class="skill-bar-label"><iconify-icon icon="vscode-icons:file-type-css"
+                    width="26"></iconify-icon><span>CSS</span></div>
+                <span class="skill-bar-percent">88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct:88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <div class="skill-bar-label"><iconify-icon icon="logos:javascript"
+                    width="22"></iconify-icon><span>JavaScript</span></div>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct:80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <div class="skill-bar-label"><iconify-icon icon="logos:react"
+                    width="26"></iconify-icon><span>React</span></div>
+                <span class="skill-bar-percent">75%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct:75%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <div class="skill-bar-label"><iconify-icon icon="logos:git-icon"
+                    width="24"></iconify-icon><span>Git</span></div>
+                <span class="skill-bar-percent">82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" style="--pct:82%"></div>
+              </div>
             </div>
           </div>
-          <div class="card-back">
-            <h3>Project Title</h3>
-            <p>An e-commerce web application specialized in selling smartphones, computers, and laptops, designed to
-              provide a smooth shopping experience with a clean interface, clear product presentation, and easy
-              navigation</p>
-            <a href="#" target="_blank">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= PROJECTS ======= -->
+    <section class="spa-section" id="projects" aria-label="Portfolio Projects by Yousef Hany - Web Development Work">
+      <div class="section-container">
+        <div class="section-label">// My Work</div>
+        <h2 class="section-heading">My <span>Projects</span></h2>
+        <!-- Arabic projects description for SEO -->
+        <p class="sr-only" lang="ar" dir="rtl">مشاريع يوسف هاني في تطوير الويب وبرمجة المواقع. أعمال مبرمج فرنت اند يوسف
+          هاني تشمل مواقع ويب حديثة ومتجاوبة باستخدام HTML و CSS و JavaScript و React.</p>
+        <!-- Internal Scroll Wrapper for Grid so it never overflows screen -->
+        <div class="projects-scroll-wrapper">
+          <div class="projects-grid">
+            <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+              <div class="mobile-frame">
+                <div class="speaker-grill"></div>
+                <div class="screen-container">
+                  <img src="imgs/pr1-compressed_Webpifier.webp"
+                    alt="Friday - Modern Web Project by Yousef Hany (يوسف هاني) - Responsive Website Design"
+                    class="long-img" loading="lazy" width="280" height="500" itemprop="image">
+                </div>
+                <div class="frame-content">
+                  <h4 itemprop="name">Friday</h4>
+                  <a href="https://yousef-hany-dev.github.io/Friday/" target="_blank" rel="noopener noreferrer"
+                    class="visit-site-btn" itemprop="url">Visit Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+              <div class="mobile-frame">
+                <div class="speaker-grill"></div>
+                <div class="screen-container">
+                  <img src="imgs/pr2-compressed_Webpifier.webp"
+                    alt="E-Power - Web Application by Yousef Hany (يوسف هاني) - High Performance Website"
+                    class="long-img" loading="lazy" width="280" height="500" itemprop="image">
+                </div>
+                <div class="frame-content">
+                  <h4 itemprop="name">E-power</h4>
+                  <a href="https://yousef-hany-dev.github.io/E-Power/" target="_blank" rel="noopener noreferrer"
+                    class="visit-site-btn" itemprop="url">Visit Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+              <div class="mobile-frame">
+                <div class="speaker-grill"></div>
+                <div class="screen-container">
+                  <img src="imgs/pr3-compressed_Webpifier.webp"
+                    alt="Lunar Flair - Creative Website by Yousef Hany (يوسف هاني) - Modern UI/UX Design"
+                    class="long-img" loading="lazy" width="280" height="500" itemprop="image">
+                </div>
+                <div class="frame-content">
+                  <h4 itemprop="name">Lunar Flair</h4>
+                  <a href="https://yousef-hany-dev.github.io/Lunar-Flair/" target="_blank" rel="noopener noreferrer"
+                    class="visit-site-btn" itemprop="url">Visit Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+              <div class="mobile-frame">
+                <div class="speaker-grill"></div>
+                <div class="screen-container">
+                  <img src="imgs/pr4-compressed_Webpifier.webp"
+                    alt="Cylo App - Mobile Application Design by Yousef Hany (يوسف هاني) - App UI Design"
+                    class="long-img" loading="lazy" width="280" height="500" itemprop="image">
+                </div>
+                <div class="frame-content">
+                  <h4 itemprop="name">Octo Link</h4>
+                  <a href="https://yousef-hany-dev.github.io/Octo-Link/" target="_blank" class="visit-site-btn" itemprop="url">Visit Website</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <h1 class="section-title">Contact <span>Me</span></h1>
-    <div class="cn">
-      <form id="contact-form" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="send-btn">
-          <span class="btn-text">Send Message</span>
-          <span class="btn-loader" style="display:none;">⏳</span>
-        </button>
-        <p class="form-status"></p>
-      </form>
-      <div class="contact-info">
-        <h3>Let’s Connect</h3>
-        <div class="link1">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yousefhany.dev@gmail.com" target="_blank"
-            rel="noopener noreferrer">
-            yousefhany.dev@gmail.com
-          </a>
-          <a href="tel:+20 1026613241"><i class="bi bi-phone"></i> +20 1026613241</a>
-          <a href="https://wa.me/201123786349" target="_blank"><i class="bi bi-phone"></i> +20 1123786349</a>
-        </div>
-        <div class="socials">
-          <a href="https://github.com/yousef-hany-dev" target="_blank"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/yousef-hany-294068386" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://www.facebook.com/yousef.hany.1023" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://wa.me/201123786349" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </section>
+
+    <!-- ======= CONTACT ======= -->
+    <section class="spa-section" id="contact"
+      aria-label="Contact Yousef Hany - Get in Touch for Web Development Projects">
+      <div class="section-container contact-center-container">
+        <div class="contact-glass-card">
+          <div class="contact-glass-left">
+            <h2 class="contact-glass-title">Let's <span>Talk</span></h2>
+            <p class="contact-glass-desc">Ready to build something amazing? Drop a message.</p>
+            <!-- Arabic contact text for SEO -->
+            <p class="sr-only" lang="ar" dir="rtl">تواصل مع يوسف هاني المبرمج لمشاريع تطوير الويب وتصميم المواقع. مبرمج
+              فرنت اند محترف جاهز لبناء موقعك.</p>
+
+            <div class="contact-glass-links">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=yousefhany.dev@gmail.com" target="_blank"
+                rel="noopener noreferrer">
+                <i class="bi bi-envelope"></i> yousefhany.dev@gmail.com
+              </a>
+              <a href="https://wa.me/201123786349" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-whatsapp"></i> +20 1123786349
+              </a>
+            </div>
+
+            <div class="contact-glass-socials">
+              <a href="https://github.com/yousef-hany-dev" target="_blank" rel="noopener noreferrer"
+                aria-label="Yousef Hany GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/yousef-hany-294068386" target="_blank" rel="noopener noreferrer"
+                aria-label="Yousef Hany LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.facebook.com/yousef.hany.1023" target="_blank" rel="noopener noreferrer"
+                aria-label="Yousef Hany Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+          <div class="contact-glass-right">
+            <form id="contact-form" class="contact-glass-form" aria-label="Contact Form">
+              <div class="form-row">
+                <input type="text" name="name" placeholder="Name" required aria-label="Your Name" />
+                <input type="email" name="email" placeholder="Email" required aria-label="Your Email" />
+              </div>
+              <textarea name="message" placeholder="Project details..." required
+                aria-label="Project Details"></textarea>
+              <button type="submit" class="glass-send-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="bi bi-send"></i>
+                <div class="btn-loader" style="display:none;"></div>
+              </button>
+              <p class="form-status"></p>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+  </main>
 
-  <footer>
-    <div class="cn">
-      <p>© 2025 Yousef Hany. All Rights Reserved</p>
-    </div>
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="sr-only" role="contentinfo">
+    <p>&copy; 2024-2026 Yousef Hany (يوسف هاني). All Rights Reserved. Front-End Developer & Web Designer from Egypt.</p>
+    <nav aria-label="Footer Navigation">
+      <a href="https://github.com/yousef-hany-dev">GitHub</a>
+      <a href="https://www.linkedin.com/in/yousef-hany-294068386">LinkedIn</a>
+      <a href="https://www.facebook.com/yousef.hany.1023">Facebook</a>
+    </nav>
   </footer>
 
-  <script src="js/stars-background.js" defer></script>
-  <script src="js/skills-rings.js" defer></script>
-  <script src="js/planet-icons.js" defer></script>
-  <script src="js/navbar-scroll.js" defer></script>
-  <script src="js/sidebar.js" defer></script>
-  <script src="js/contact-form.js" defer></script>
+  <!-- ==================== NOSCRIPT FALLBACK ==================== -->
+  <noscript>
+    <div
+      style="padding:2rem;text-align:center;color:#fff;background:#0a0a1a;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+      <h1>Yousef Hany | يوسف هاني</h1>
+      <h2>Front-End Developer | مطور واجهات أمامية</h2>
+      <p>Professional Front-End Developer from Egypt specializing in HTML, CSS, JavaScript, and React.</p>
+      <p lang="ar" dir="rtl">يوسف هاني مبرمج ومطور واجهات أمامية محترف من مصر. متخصص في HTML و CSS و JavaScript و React.
+      </p>
+      <p>Contact: <a href="mailto:yousefhany.dev@gmail.com" style="color:#00e5ff;">yousefhany.dev@gmail.com</a></p>
+      <p>Please enable JavaScript to view the full portfolio experience.</p>
+    </div>
+  </noscript>
+
+  <!-- Scripts -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="js/stars-background.js" defer></script>
+  <script src="js/planet-icons.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
+  <script src="js/sidebar-new.js" defer></script>
 </body>
 
 </html>

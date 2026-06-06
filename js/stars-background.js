@@ -1,3 +1,4 @@
+// ===== Stars Background - Optimized =====
 (function () {
   const container = document.querySelector(".stars-container");
   if (!container) return;
@@ -14,14 +15,10 @@
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
   let t = 0;
+  let rafId = null;
 
-  function rand(n = 1) {
-    return Math.random() * n;
-  }
-
-  function noise(seed, time) {
-    return Math.sin(time + seed) + Math.sin(time * 0.7 + seed * 1.7);
-  }
+  function rand(n = 1) { return Math.random() * n; }
+  function noise(seed, time) { return Math.sin(time + seed) + Math.sin(time * 0.7 + seed * 1.7); }
 
   function createStar(x, y) {
     const el = document.createElement("div");
@@ -34,17 +31,11 @@
   for (let i = 0; i < NUM_STARS; i++) {
     const x = rand(window.innerWidth);
     const y = rand(window.innerHeight);
-
     stars.push({
       el: createStar(x, y),
-      x,
-      y,
-      ox: x,
-      oy: y,
-      vx: 0,
-      vy: 0,
-      sx: rand(1000),
-      sy: rand(1000),
+      x, y, ox: x, oy: y,
+      vx: 0, vy: 0,
+      sx: rand(1000), sy: rand(1000),
     });
   }
 
@@ -54,6 +45,7 @@
   });
 
   function animate() {
+    rafId = requestAnimationFrame(animate);
     t += NOISE_SPEED;
 
     for (const s of stars) {
@@ -77,18 +69,22 @@
 
       s.vx += noise(s.sx, t) * NOISE_AMPL;
       s.vy += noise(s.sy, t) * NOISE_AMPL;
-
       s.vx *= DAMP;
       s.vy *= DAMP;
-
       s.x += s.vx * 0.016;
       s.y += s.vy * 0.016;
-
       s.el.style.transform = `translate(${s.x}px, ${s.y}px)`;
     }
-
-    requestAnimationFrame(animate);
   }
+
+  // Pause when tab is hidden to save CPU
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+    } else {
+      if (!rafId) animate();
+    }
+  });
 
   animate();
 })();

@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
     emailjs.sendForm("service_59nieyr", "template_ne4096n", this).then(
       () => {
         formStatus.style.color = "limegreen";
-        formStatus.textContent = "✅ Message sent successfully!";
+        formStatus.textContent = "🎉 Awesome! Your message just landed in my inbox. Let's build something great.";
         btnLoader.style.display = "none";
         btnText.textContent = "Send Message";
         contactForm.reset();
       },
       (error) => {
         formStatus.style.color = "red";
-        formStatus.textContent = "❌ Failed to send. Try again later.";
+        formStatus.textContent = "⚠️ Houston, we have a problem! Please try again or message me directly on WhatsApp or Facebook.";
         btnLoader.style.display = "none";
         btnText.textContent = "Send Message";
         console.error("EmailJS Error:", error);

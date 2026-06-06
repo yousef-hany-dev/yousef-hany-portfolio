@@ -1,6 +1,6 @@
 :root {
   --whte-color: white;
-  ---black-color: #000000;
+  --black-color: #000000;
   --main-color: rgb(7, 126, 245);
   --shadow-color: rgba(0, 0, 0, 0.2);
   --bg1: #030313;
@@ -9,6 +9,20 @@
   --accent: linear-gradient(135deg, #1FD1FF 0%, #6B5BFF 100%);
   --icon-size: 60px;
 
+}
+
+/* ==================== SR-ONLY (Screen Reader / SEO Only) ==================== */
+/* Visually hidden but accessible to screen readers and search engines */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 html {
@@ -447,7 +461,7 @@ header .box2 .mill .skills {
   font-size: 0.7rem;
   padding: 15px;
   color: var(--whte-color);
-  background-color: var(---black-color);
+  background-color: var(--black-color);
   box-shadow: inset 0 0 30px 0px rgba(156, 196, 233, 0.719),
     0 0 10px 0px rgb(148, 190, 233);
   width: 100px;

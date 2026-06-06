@@ -1,0 +1,21 @@
+{
+  "name": "Yousef Hany | Front-End Developer Portfolio",
+  "short_name": "Yousef Hany",
+  "description": "Yousef Hany (يوسف هاني) - Professional Front-End Developer from Egypt specializing in modern, responsive, and high-performance websites using HTML, CSS, JavaScript, and React.",
+  "start_url": "/portfolio/",
+  "display": "standalone",
+  "background_color": "#0a0a1a",
+  "theme_color": "#00e5ff",
+  "orientation": "any",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "web development", "technology"],
+  "icons": [
+    {
+      "src": "imgs/شعار-compressed_Webpifier.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
